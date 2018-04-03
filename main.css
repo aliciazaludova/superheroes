@@ -1,3 +1,13 @@
 body {
     background-color: #504a4a;
+    color: rgb(216, 212, 212);
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
