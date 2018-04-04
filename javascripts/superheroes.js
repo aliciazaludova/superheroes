@@ -28,21 +28,19 @@ function executeThisCodeAfterFileLoaded () { const data = JSON.parse(this.respon
 const buildDomString = (fancyArray) => {
     let domString = "";
     fancyArray.forEach((superhero) => {
-        // domString += `<div class="row"`;
-        // domString += `<div class="col-md-4"`;
-        // domString += `<div class="panel"`;
-        // domString += `<div class="panel-body"`;
-        // domString += `<h3>${superhero.id}</h3>`;
-        // domString += `<p>${superhero.jobIds}</p>`;
-        // domString += `<p>${superhero.gender}</p>`;
-        // domString += `<h1>${superhero.name}</h1>`;
+        
         domString += `<div class="col-md-3">`;
         domString += `<div class="panel">`;
         domString +=    `<div class="panel-heading">`;
-        domString +=        `<h3 class="panel-title">Panel title</h3>`;
+        domString +=        `<h3 class="panel-title">${superhero.name}</h3>`;
         domString += `</div>`;
         domString +=    `<div class="panel-body">`;
-        domString +=        `<img class="charImage" src="${superhero.image}">`;
+        if (superhero.gender === 'Male') {
+            domString +=    `<img class="charImage maleImage" src="${superhero.image}">`;
+        } else {
+            domString +=    `<img class="charImage femaleImage" src="${superhero.image}">`;
+        }
+        // domString +=        `<img class="charImage" src="${superhero.image}">`;
         domString +=  `<p class="charDescription">${superhero.description}</p>`;
         domString +=    `</div>`;
         domString += `</div>`;

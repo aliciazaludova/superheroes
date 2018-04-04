@@ -16,7 +16,7 @@ img {
     border: 4px solid yellow;
 }
 
-panel > .panel-heading {
+.panel > .panel-heading {
     background-color: #F78F3F;
 }
 
@@ -24,7 +24,7 @@ panel > .panel-heading {
     background-color: #504a4a;
     border: solid 1px white;
     text-align: center;
-    height: 450px;
+    height: 500px;
 }
 
 .charDescription {
@@ -33,5 +33,13 @@ panel > .panel-heading {
 
 .charImage {
     border-radius: 100%;
+}
+
+.maleImage {
+    border: 5px solid #518CCA;
+}
+
+.femaleImage {
+    border: 5px solid pink;
 }
 
